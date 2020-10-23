@@ -1,0 +1,27 @@
+#vltTitle{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 34px;
+}
+nav{
+    text-align: center;
+    display:block;
+}
+nav a{
+    text-decoration: none;
+    font-size: 24px;
+}
+nav a:link{
+    color: #000000;
+}
+nav a:visited{
+    color: #000000;
+}
+nav a:hover{
+    color: turquoise;
+}
+nav li{
+    display: inline;
+    padding-left: 10%;
+    padding-right: 10%;
+}
