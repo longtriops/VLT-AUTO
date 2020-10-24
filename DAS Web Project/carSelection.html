@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="VltAuto.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="carLoan.js">
+    </script>
+
 </head>
 
 <body>
@@ -12,12 +16,12 @@
         <h1>VLT AUTO</h1>
     </div> 
     <div id="address">
-        <address>
+        <h2><address>
             4859 Motor Drive
             <br>
             Des Moines, IA 50310
-        </address>
-    </div>
+        </address></h2>
+        </div>
 <main>
     <nav>
         <ul>
@@ -26,7 +30,41 @@
             <li><a href="contact.html"> Contact </a></li>
         </ul>
     </nav>
-    <h1>Car Loan Calculator</h1>
+    
+    <!--Flavor images/text-->
+    <div class="sideBySide" style= float:none;>
+        <p><img src="images/car1.jpg" alt="Pontiac G8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Mi eget mauris pharetra et. Imperdiet proin fermentum leo vel orci porta non pulvinar neque.</p>
+        <p><img src="images/car2.jpg" alt="Jeep Wrangler">Fusce fermentum id arcu vitae dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean accumsan non nibh nec auctor. Nullam scelerisque pharetra tempus. Vestibulum sit amet ligula dui. Donec ut metus tincidunt, mollis erat sit amet, volutpat neque. Sed est lectus, dignissim eu est in, rhoncus pellentesque ligula.</p>
+        <p><img src="images/car3.jpg" alt="Mercury Diffuser">Donec nisl leo, efficitur iaculis rutrum sit amet, sodales at diam. Maecenas consectetur magna elit, quis ullamcorper eros tincidunt et. Aenean lobortis euismod condimentum. Mauris gravida, nunc tincidunt mollis venenatis, lectus nisi semper libero, a luctus ex turpis eget leo. Sed tortor orci, pharetra a vulputate sit amet, rhoncus ut est.</p>
+        <p><img src="images/car4.jpg" alt="Dodge Ram">Nulla fermentum aliquet laoreet. Pellentesque sit amet purus eu purus fringilla eleifend. Duis quis feugiat lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nec orci leo. Fusce venenatis nulla vel diam tincidunt, porttitor pretium sapien venenatis.</p>
+        <p><img src="images/car5.jpg" alt="Buick LeSabre">Vestibulum lorem libero, tempor vel felis et, convallis vehicula ante. Vivamus consequat tempor lacus eget imperdiet. Nunc porta lectus at eros convallis sollicitudin. Ut interdum sit amet dolor ut porta.</p>
+        <p><img src="images/car6.jpg" alt="Maxda 6">Ut aliquet ultricies libero fermentum porttitor. Curabitur feugiat faucibus justo vel congue. Pellentesque posuere hendrerit iaculis. Vivamus nunc libero, sodales quis tincidunt et, hendrerit at enim. Curabitur aliquet tincidunt velit, eget suscipit leo posuere quis.</p>
+    </div>
+    
+    <h3 style= text-align:center;padding-top:12px;margin:2px;>Car Loan Calculator</h3>
+    <!--Loan amount, term (months), interest rate-->
+    <div class="container">
+        <form>
+            <label for="loan">Loan Amount </label>
+            <input type="text" id="loan" name="loan" placeholder="$"><br>
+            
+            <label for="interest">Interest Rate </label>
+            <input type="text" id="interest" name="interest" placeholder="%"><br>
+
+            <label for="term">Term (months) </label>
+            <input type="text" id="term" name="term">
+            <br><br>
+
+            <input type="button"; value="Calculate" onClick="carloanCalculate()">
+        </form>
+    </div>
+    <p style= text-align:center;>Monthly Payment: <div id="loanResult" style= text-align:center;margin:6px;></div></p>
+    <br><br>
+
+    
+    
+
+
 </main>
 
 

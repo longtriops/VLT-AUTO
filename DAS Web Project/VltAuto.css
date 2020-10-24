@@ -41,6 +41,11 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+input[type=text]{
+    width: 20%;
+    padding: 8px 10px 10px;
+    margin: 8px;
+}
 #vltTitle{
     display: inline;
     text-align: center;
@@ -50,8 +55,9 @@ img{
 }
 #address{
     text-align: center;
-    font-size: 18px;
-    padding-bottom: 10px;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 6px;
 }
 .sideBySide img{
     float:left;
@@ -68,4 +74,23 @@ img{
 .sideBySide h3{
     display: block;
     font-family: sans-serif;
+}
+.container{
+    padding-top: 8px;
+    text-align: center;
+}
+.container label{
+    display: inline-block;
+    width: 220px;
+}
+.container input{
+    clear: both;
+    width: 150px;
+}
+.email{
+    text-align: center;
+    font-size: large;
+}
+.email a{
+    text-decoration: none;
 }
