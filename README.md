@@ -12,4 +12,4 @@ On the "Contact Us" page, users can "sign up" for a newsletter. What this actual
 
 ~~NOTE: Unfortunately some browsers such as Chrome (majority of the testing was done here), do not store cookies for local websites/files, so authentication will not work. When tested on IE, functions as it should. As this was just for "extra credit" no fix for Chrome was implemented.~~
 
-Update: Initially I had interpreted the project as local website exercise, however publishing to Github Pages as resolved the above issue and the website is live. This also means better approach for authentication can/should now be done, but for the scope and timing of this project, no changes have been made.
+Update: Initially I had interpreted the project as local website exercise, however publishing to Github Pages as resolved the above issue and the website is live. This also means a better approach for authentication can/should now be done, but for the scope and timing of this project, no changes have been made.
