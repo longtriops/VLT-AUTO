@@ -32,5 +32,5 @@ function carloanCalculate(){
 
         result.innerHTML = "$"+monthly.toFixed(2);
     }
-   
+    
 }

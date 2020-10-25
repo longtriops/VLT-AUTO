@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> VLT AUTO DSM</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="VltAuto.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
 
-    <body>
-        <div id="vltTitle">
-            <h1>VLT AUTO</h1>
-        </div> 
-        <div id="address">
-            <h2><address>
-                4859 Motor Drive
-                <br>
-                Des Moines, IA 50310
-            </address></h2>
-            </div>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="carSelection.html"> Cars For Sale </a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </ul>
-        </nav>
+<head>
+    <title> VLT AUTO DSM</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="VltAuto.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js.cookie.js"></script>
+    <script type = "text/javascript">
+        function newsSignUp(){
+            var visitorName = document.getElementById("realName").value;
+            var visitorEmail = document.getElementById("emailAddress").value;
+            if(visitorEmail == "" || visitorName == ""){
+                alert("Missing input(s)");
+                return;
+            }
+            Cookies.set("name", visitorName, {expires: 7});
+            Cookies.set("email", visitorEmail, {expires: 7})
+            console.log(Cookies.get());
 
-        <div class="email">
-            <a href="mailto:vincenttruongty@gmail.com">
-                Click here to inquire about our inventory.</a>
-        </div>
-        
+            document.getElementById("newsletter").reset();
+            alert("Signed up!");
+        }
+    </script>
+</head>
 
-    </main>
-    </body>
+<body>
+    <div id="vltTitle">
+        <h1>VLT AUTO</h1>
+    </div> 
+    <div id="address">
+        <h2><address>
+            4859 Motor Drive
+            <br>
+            Des Moines, IA 50310
+        </address></h2>
+    </div>
+<main>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="carSelection.html"> Cars For Sale </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
 
+    <div class="email">
+        <a href="mailto:vincenttruongty@gmail.com">
+            Click here to email about our inventory.</a>
+    </div>
+    <br><br><br>
 
+    <p style="text-align: center;margin:0;">Sign up for our newsletter for updates on inventory.</p>
+    <div class="container">
+        <form id="newsletter">
+            <label for="emailAddress">Email </label>
+            <input type="text" id="emailAddress"><br>
 
+            <label for="firstName">Name</label>
+            <input type="text" id="realName"><br><br>
+    
+            <input type="button"; value="Sign Up" onClick= newsSignUp()>
+        </form>
+    </div>
+
+</main>
+</body>
 
 </html>
