@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> VLT AUTO DSM</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="VltAuto.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best used cars in the Des Moines Metro Area. Every vehicle comes with 21-point inspection by our team of ASE Certified Technicians.">
+    <script src="js.cookie.js"></script>
+</head>
+
+<body>
+    <div id="vltTitle">
+        <h1>VLT AUTO</h1>
+    </div> 
+
+    <!--h2 for WCAG-->
+    <div id="address">
+        <h2><address>
+            4859 Motor Drive
+            <br>
+            Des Moines, IA 50310
+        </address></h2>
+    </div>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="carSelection.html"> Cars For Sale </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <!--Welcome to VLT AUTO, details on location etc-->
+    <div class= "sideBySide">
+        <img src="images/carLot.jpg" alt="Our location has an inventory of over 50 makes and models.">
+        <h3>About Us</h3>
+        <p>Dapibus dictum lacinia ipsum tempor scelerisque lobortis, id ante morbi sit. Dis nulla dui inceptos, habitant eu. Taciti et dapibus eleifend, augue ullamcorper laoreet arcu felis platea! Erat curae; tellus dictumst ipsum sociosqu. Velit nulla fringilla vehicula pellentesque curabitur ultrices molestie habitant. Elit ipsum dictum ut laoreet quam ornare dapibus arcu. Aliquet!</p>
+    </div>
+    <!--Displays Welcome Back Alert-->
+    <script>
+        if(!Cookies.get("welcome") && Cookies.get("name")){
+            alert("Welcome back "+ Cookies.get("name") + ".");
+            Cookies.set("welcome", true);
+            console.log(Cookies.get("welcome"));
+        }
+    </script>
+
+</main>
+</body>
+<!--End-->
+</html>
